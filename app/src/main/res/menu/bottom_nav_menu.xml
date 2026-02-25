@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MotoristaHomeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/MotoristaCarteiraFragment"
+        android:icon="@drawable/ic_carteira_24"
+        android:title="carteira" />
+
+    <item
+        android:id="@+id/CorridasFragment"
+        android:icon="@drawable/ic_car_24"
+        android:title="corridas" />
+
+    <item
+        android:id="@+id/MotoristaPerfilFragment"
+        android:icon="@drawable/ic_person_24"
+        android:title="perfil"/>
+
+</menu>

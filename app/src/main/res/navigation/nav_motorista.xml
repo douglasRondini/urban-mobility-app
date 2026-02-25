@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_motorista"
+    app:startDestination="@id/MotoristaHomeFragment">
+
+    <fragment
+        android:id="@+id/MotoristaHomeFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.motorista.MotoristaHomeFragment"
+        tools:layout="@layout/fragment_motorista_home"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_MotoristaHomeFragment_to_minhaRedeFragment"
+            app:destination="@id/minhaRedeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MotoristaCarteiraFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.motorista.carteira.MotoristaCarteiraFragment"
+        tools:layout="@layout/fragment_motorista_carteira"
+        android:label="carteira" >
+        <action
+            android:id="@+id/action_MotoristaCarteiraFragment_to_saqueFragment"
+            app:destination="@id/saqueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CorridasFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.motorista.corridas.CorridasFragment"
+        tools:layout="@layout/fragment_corridas"
+        android:label="corridas"/>
+    <fragment
+        android:id="@+id/MotoristaPerfilFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.motorista.MotoristaPerfilFragment"
+        tools:layout="@layout/fragment_motorista_perfil"
+        android:label="perfil"/>
+    <fragment
+        android:id="@+id/minhaRedeFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.minhaRede.MinhaRedeFragment"
+        android:label="fragment_minha_rede"
+        tools:layout="@layout/fragment_minha_rede" >
+        <action
+            android:id="@+id/action_minhaRedeFragment_to_indicationFragment"
+            app:destination="@id/indicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/indicationFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.indication.IndicationFragment"
+        android:label="fragment_indication"
+        tools:layout="@layout/fragment_indication" />
+    <fragment
+        android:id="@+id/saqueFragment"
+        android:name="com.douglasrondini.movinvel.ui.fragment.saque.SaqueFragment"
+        android:label="fragment_saque"
+        tools:layout="@layout/fragment_saque" />
+
+
+</navigation>

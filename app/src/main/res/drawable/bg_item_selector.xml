@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado quando o item está pressionado -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/second"/>
+            <corners android:radius="48dp"/>
+        </shape>
+    </item>
+
+    <!-- Estado quando o item está selecionado -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Third"/>
+            <corners android:radius="48dp"/>
+        </shape>
+    </item>
+
+    <!-- Estado padrão (não selecionado) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <corners android:radius="48dp"/>
+        </shape>
+    </item>
+</selector>
